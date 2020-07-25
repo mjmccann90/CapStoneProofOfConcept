@@ -24,7 +24,7 @@ namespace CapStoneProofOfConcept.Controllers
         public async Task<IActionResult> Post(UserProfile userProfile)
         {
             await _userProfileRepository.Add(userProfile);
-            return CreatedAtAction("Get", new { id = userProfile.Id }, userProfile);
+            return Ok(userProfile);
         }
     }
 }

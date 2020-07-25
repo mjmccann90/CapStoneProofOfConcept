@@ -16,7 +16,6 @@ namespace CapStoneProofOfConcept.Models
         [StringLength(255, MinimumLength = 5)]
         public string Email { get; set; }
 
-        [Required]
         public string PersonalityType { get; set; }
         //public PersonalityType PersonalityType { get; set; }
 
